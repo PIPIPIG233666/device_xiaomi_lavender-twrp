@@ -53,7 +53,7 @@ BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
-TARGET_PREBUILT_KERNEL := device/xiaomi/lavender/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/xiaomi/wayne/Image.gz-dtb
 
 # Partitions
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -77,14 +77,8 @@ TARGET_COPY_OUT_VENDOR := vendor
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
-
-
-# Android Verified Boot
-BOARD_AVB_ENABLE := false
-BOARD_BUILD_DISABLED_VBMETAIMAGE := true
-
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := lavender
+TARGET_OTA_ASSERT_DEVICE := wayne
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
@@ -101,5 +95,5 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_USE_TOOLBOX := true
-TARGET_RECOVERY_FSTAB := device/xiaomi/lavender/recovery/root/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/xiaomi/wayne/recovery/root/etc/recovery.fstab
 PLATFORM_SECURITY_PATCH := 2099-12-31
